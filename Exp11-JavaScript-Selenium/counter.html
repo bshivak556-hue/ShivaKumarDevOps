@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>JavaScript Counter</title></head>
+<body>
+  <h1>JavaScript Counter</h1>
+  <p>Count: <output id="count">0</output></p>
+  <button id="increment" type="button">Increment</button>
+  <button id="reset" type="button">Reset</button>
+  <script>
+    let count = 0;
+    const output = document.getElementById("count");
+    document.getElementById("increment").addEventListener("click", () => {
+      count += 1;
+      output.textContent = String(count);
+    });
+    document.getElementById("reset").addEventListener("click", () => {
+      count = 0;
+      output.textContent = String(count);
+    });
+  </script>
+</body></html>

@@ -1,0 +1,15 @@
+docker version                  # Client/engine versions
+docker pull IMAGE               # Download an image
+docker images                   # List local images
+docker build -t NAME:TAG .      # Build image from Dockerfile
+docker run --rm IMAGE           # Run and remove container after exit
+docker run -d --name NAME IMAGE # Run in background with a name
+docker ps                       # Running containers
+docker ps -a                    # All containers
+docker logs NAME                # View logs
+docker exec -it NAME sh         # Open a shell (if image contains sh)
+docker stop NAME                # Stop container
+docker rm NAME                  # Remove stopped container
+docker rmi IMAGE:TAG            # Remove image
+docker tag IMAGE:TAG USER/IMAGE:TAG
+docker push USER/IMAGE:TAG      # Publish image to registry
